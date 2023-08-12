@@ -1,0 +1,160 @@
+.related-items{
+    img{
+        margin-bottom: 2rem;
+    }
+}
+
+.proj-list{
+    img{
+        margin: 1rem 0; 
+    }
+}
+
+.grid-sizer,.element-item{
+    width: 33.3333%;  
+    padding: 0 10px;
+}
+
+.element-item {
+    position: relative; 
+    height: auto;
+    margin-bottom:2rem;
+    transition:0.5s all;
+    &:hover{
+        transform:translateY(-7px);
+    }
+}
+
+.filter-button-group{  
+    display: flex;      
+    justify-content: space-evenly;
+    padding: 0 15%;
+    margin-bottom: 2rem;
+
+    button{
+        background: transparent;
+        color: white;
+        border: none;
+        cursor: pointer;
+        font-size: 1.25rem;    
+        font-weight: 300;
+        &.is-checked{
+            font-weight: 700;
+        }
+        &:focus,&:active{
+            outline: none;
+        }
+    }
+}  
+
+.viewmore{
+    display: none;
+}
+
+  
+.select-opt{
+    display: none;
+    align-items: center;    
+    margin-bottom: 2rem;
+    padding: 1rem;  
+    p{
+        margin-bottom: 0;
+    }
+    select.filters-select{
+        margin-left: 0.5rem;
+        background: #282832;
+        color: #fff;
+        border: none;        
+        padding: 0.5rem;
+        width: 50%;
+    }
+}
+
+.proj-img{
+    width: 100%;
+    height: 700px;
+    background-position: center !important;
+    background-size: cover !important;
+}
+
+//kitchen
+
+#modern-rustic-kitchen{
+    background: url('/imgs/modern-rustic-kitchen.jpg') no-repeat;
+}
+
+#luxurious-kitchen{
+    background: url('/imgs/luxurious-old-world-kitchen.jpg') no-repeat;
+}
+
+#rustic-elegance-kitchen{
+    background: url('/imgs/rustic-elegance.jpg') no-repeat;
+}
+
+//bedroom
+
+#dry-beach{
+    background: url('/imgs/dry-beach.jpg') no-repeat;
+}
+
+#green-retreat{
+    background: url('/imgs/green-rertreat.jpg') no-repeat;
+}
+
+#newyork-style{
+    background: url('/imgs/modern-newyork-style.jpg') no-repeat;
+}
+#neoclassical{
+    background: url('/imgs/neoclassical.jpg') no-repeat; 
+}
+
+//bathroom
+
+#transitional-bathroom{
+    background: url('/imgs/transitional-bathroom.jpg') no-repeat;
+}
+
+#two-sink-bathroom{
+    background:url('/imgs/luxury-bathroom.jpg') no-repeat;
+}
+
+#marble-bathroom{
+    background:url('/imgs/marble-bathroom.jpg') no-repeat;
+}
+
+#prints-teals{
+    background:url('/imgs/prints-teals.jpg') no-repeat;
+}
+
+//living room
+
+#modern-cabin{
+    background: url('/imgs/modern-cabin.jpg') no-repeat;
+}
+
+#blue-lounge{
+    background: url('/imgs/blue-lounge.jpg') no-repeat;
+}
+
+#luxury-in-suburb{
+    background: url('/imgs/luxury-suburb.jpg') no-repeat;
+}
+
+
+//commercial
+
+#building-lounge{
+    background:url('/imgs/contemporary-lounge.jpg')no-repeat;
+}
+
+#office-space{
+    background:url('/imgs/contemporary-office.jpg')no-repeat;
+}
+
+#fashion-boutique{
+    background:url('/imgs/fashion-boutique.jpg')no-repeat;
+}
+
+#industrial-workspace{
+    background:url('/imgs/modern-industrial-workspace.jpg') no-repeat;
+}

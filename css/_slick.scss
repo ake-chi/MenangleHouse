@@ -1,0 +1,97 @@
+.slick-prev:before,
+.slick-next:before {
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  font-size: 1.5rem;
+}
+.slick-prev {
+  background: #2c2b32;
+  &::before {
+    content: "\f104";
+    color: white !important;
+  }
+  &:hover {
+    background: #2c2b32;
+  }
+}
+.slick-next {
+  background: #b3b3b3;
+  &::before {
+    content: "\f105";
+    color: $bg-text-color !important;
+  }
+  &:hover {
+    background: #b3b3b3;
+  }
+}
+
+.slick-prev,
+.slick-next {
+  z-index: 10;
+  width: 50px;
+  height: 50px;
+}
+
+.slick-prev.slick-disabled:before,
+.slick-next.slick-disabled:before {
+  opacity: 1;
+}
+
+.proj-sec-slider {
+  .slick-prev,
+  .slick-next {
+    top: inherit !important;
+    bottom: 5% !important;
+  }
+  .slick-prev {
+    left: inherit;
+    right: 4rem;
+    &:focus{
+      background: #2c2b32;
+    }
+  }
+  .slick-next {
+    right: 0;
+    &:focus{
+      background:#b3b3b3;
+    }
+  }
+}
+
+.on-proj-sec-slider {
+  .slick-prev,
+  .slick-next {
+    top: inherit !important;
+    bottom: 12% !important;
+  }
+  .slick-prev {
+    left: 0;
+    &:focus{
+      background: #2c2b32;
+    }  
+  }
+  .slick-next {
+    right: inherit;
+    left: 4rem;
+    &:focus{
+      background: #b3b3b3;
+    }    
+  }
+}
+
+.services-slider {
+  .slick-dots {
+    bottom: -35px;
+    li {
+      &.slick-active button {
+        &:before {
+          color: #3b3b3b;
+        }
+      }
+      button:before{
+        color: rgba(179,179,179,0.2);
+        font-size: 1rem;
+      }
+    }
+  }
+}

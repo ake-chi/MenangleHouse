@@ -1,0 +1,122 @@
+header {
+  position: relative;
+  nav {
+    position: absolute;
+    width: 6rem;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.9);
+    top: 0;
+    left: 0;
+    z-index: 1020;
+  }
+}
+nav {
+  padding: 2rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  .menu-button {
+    width: 40px;
+    height: 30px;
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    .bar {
+      width: 100%;
+      height: 2px;
+      background: $bg-text-color;
+      // margin: 0.75rem 0;
+    }
+  }
+  .contact-link {
+    span {
+      color: $bg-text-color;
+      font-size: 1.5rem;
+      transition: 0.4s all;
+      &:hover{
+        color: #b3b3b3;
+      }
+    }
+  }
+}
+
+.menu-links {
+  // display: none;
+  transform: translateX(-100%);
+  position: fixed;
+  height: 100%;
+  top: 0;
+  left: 0;
+  width: 50%;
+  background-color: white;
+  z-index: 1050;
+  transition:0.4s all;
+  ul {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    li {
+      a {
+        font-size: 3.5rem;
+        font-weight: 600;
+        color: $bg-text-color;
+        position: relative;
+        &:hover {
+          color: #b3b3b3;
+          &:after {
+            content: "";
+            position: absolute;
+            width: 5rem;
+            height: 0.3rem;
+            top: 50%;
+            margin-left: 1.5rem;
+            background-color: #b3b3b3;
+          }
+        }
+      }
+    }
+  }
+}
+.menu-links.open{
+    transform: translateX(0);
+}
+
+#mob-links{
+  display: none;
+}
+
+.close-btn {
+    width: 100%;
+    height: 5rem;    
+    position: relative;  
+    cursor: pointer;
+    z-index: 1100;  
+    .cb-wrap{
+      position: absolute;
+      height: 100%;
+      right: 0;
+      .c-bar {     
+        width: 40px;
+        height: 2px;
+        background: $bg-text-color;
+        position: absolute;
+        top: 50%;
+        right: 3rem;
+        &:first-child{
+            transform: rotate(45deg);
+        }
+        &:last-child{
+            transform: rotate(-45deg);
+        }
+      }
+    }
+
+}

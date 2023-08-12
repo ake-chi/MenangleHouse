@@ -1,0 +1,14 @@
+.banner-img{
+    position: absolute;
+    top: 15%;
+    right: 10%;
+}
+
+.abt-pg{
+    .row{
+        margin-bottom: 5rem;
+        &:last-child{
+            margin-bottom: 0;
+        }
+    }
+}
